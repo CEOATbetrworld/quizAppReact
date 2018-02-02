@@ -1,0 +1,20 @@
+.options button {
+  height: 3vw;
+  width: 20vw;
+  display: flex;
+  text-align: right;
+}
+
+.ScoreBoard :nth-child(1) {
+  color: green;
+}
+
+.ScoreBoard :nth-child(2) {
+  color: red;
+}
+
+.ScoreBoard {
+  position: absolute;
+  top: 20vh;
+  right: 40vw;
+}
