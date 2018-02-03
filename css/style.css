@@ -36,17 +36,20 @@ h2{
   right: 40vw;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 980px) {
+  h2{
+    font-size:50px;
+  }
   .options button {
     width: 95vw;
-    height: 15vh;
-    margin: 2px;
+    height: 10vh;
+    margin: 10px;
+    font-size:50px;
   }
 
   .ScoreBoard {
-    position: absolute;
-    top: 80vh;
-    right: 75vw;
-    margin:20px;
+    top: 50vh;
+    right: 70vw;
+    font-size:40px;
   }
 }
