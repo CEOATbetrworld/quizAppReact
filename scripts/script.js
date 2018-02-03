@@ -1,11 +1,11 @@
 var i = 0;
 var questions = [{
-        Question: "Who are the founders of apple",
+        Question: "Who are the founders of Apple",
         options: ["we", "you", "Woz, Jobs and Wayne", "Apple Tree :)"],
         correct: "Woz, Jobs and Wayne"
     },
     {
-        Question: "change is future",
+        Question: "Change is future",
         options: ["yes", "No", "May be", "absolutely"],
         correct: "absolutely"
     },
@@ -18,6 +18,76 @@ var questions = [{
             "World Wide Web"
         ],
         correct: "World Wide Web"
+    },
+    {
+        Question: "HTML is what type of language",
+        options: [
+            "Scripting Language",
+            "Markup Language",
+            "Programming Language",
+            "Network Protocol"
+        ],
+        correct: "Markup Language"
+    },
+    {
+        Question: "HTML uses",
+        options: [
+            "User defined tags",
+            "Pre-specified tags",
+            "Fixed tags defined by the language",
+            "Tags only for linking"
+        ],
+        correct: "Fixed tags defined by the language"
+    },
+    {
+        Question: "The year in which HTML was first proposed",
+        options: [
+            "1990",
+            "1980",
+            "2000",
+            "1995"
+        ],
+        correct: "1990"
+    },
+    {
+        Question: "Fundamental HTML Block is known as ",
+        options: [
+            "HTML Body",
+            "HTML Tag",
+            "HTML Attribute",
+            "HTML Element"
+        ],
+        correct: "HTML Tag"
+    },
+    {
+        Question: " Apart from <b> tag, what other tag makes text bold",
+        options: [
+            "<fat>",
+            "<strong>",
+            "<black>",
+            "<emp>"
+        ],
+        correct: "<strong>"
+    },
+    {
+        Question: " How can you make a bulleted list with numbers",
+        options: [
+            "<dl>",
+            "<ol>",
+            "<list>",
+            "<ul>"
+        ],
+        correct: "<ol>"
+    },
+    {
+        Question: "What tag is used to display a picture in a HTML page",
+        options: [
+            "picture",
+            "image",
+            "img",
+            "src"
+        ],
+        correct: "img"
     }
 ];
 
@@ -107,8 +177,7 @@ class Quiz extends React.Component {
                 correct: questions[i].correct,
                 inc:
                     !(prevState.inc > questions.length - prevState.corr - 1) ?
-                    prevState.inc + 1 :
-                    prevState.inc
+                    prevState.inc + 1 : prevState.inc
             };
         });
         console.log(i);
@@ -126,8 +195,7 @@ class Quiz extends React.Component {
                 correct: questions[i].correct,
                 corr:
                     !(prevState.corr > questions.length - prevState.inc - 1) ?
-                    prevState.corr + 1 :
-                    prevState.corr
+                    prevState.corr + 1 : prevState.corr
             };
         });
         console.log(i);
